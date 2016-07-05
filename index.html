@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>足彩2016-17赛季预售活动</title>
+  <link rel="import" href="h/commonHead.html?__inline">
+  <link rel="stylesheet" href="./l/newseason.less">
+  <script type="text/javascript">
+    //公共全局配置文件
+    var globalConfig = {
+      startTime : new Date().getTime(), //页面开始渲染时间 ， 目前应用于：日志统计、性能统计。
+      isLogin     :   false
+    }
+  </script>
+  <script src="http://mjs.sinaimg.cn/wap/public/suda/201605101615/suda_log.min.js"></script>
+</head>
+
+<body>
+  <!-- 
+    <script type="text/html" id="yp_00_tmp"></script> 
+    <div id="smart_loading">
+      <div id="smart_loading_txt">数据加载中</div>
+    </div>
+  -->
+  <!-- 顶部 -->
+  <link rel="import" href="h/header.html?__inline">
+  <!-- 头部 -->
+  <div id="ns_head" class="nsbox">
+    <img src="./i/ns_head.jpg" alt="" class="ns_head_img">
+  </div>
+  <!-- 人工智能小炮VIP  足彩大人物必备 -->
+  <div id="ns_box00" class="nsbox" data-box="ns_01">
+    <div class="nsbox_head">
+      <img src="./i/ns_t1.png" alt="人工智能小炮VIP  足彩大人物必备" class="nsbox_head_t1">
+      <!-- <span class="nsbox_head_icon"></span>
+      <em class="nsbox_head_title">人工智能小炮VIP</em>
+      <em class="nsbox_head_subtitle">足彩大人物必备</em> -->
+    </div>
+    <div class="nsbox_card yp_pay" id="nsbox_card_01" data-box="ns_01" data-idx="0">
+      <div class="nsbox_card_txt">剩<em class="nsbox_card_num" id="ns_count_00">188</em>张</div>
+    </div>
+    <div class="nsbox_card yp_pay" id="nsbox_card_02" data-box="ns_01" data-idx="1">
+      <div class="nsbox_card_txt">剩<em class="nsbox_card_num" id="ns_count_01">888</em>张</div>
+    </div>
+    <div class="nsbox_card yp_pay" id="nsbox_card_03" data-box="ns_01" data-idx="2">
+      <div class="nsbox_card_txt">剩<em class="nsbox_card_num" id="ns_count_02">8888</em>张</div>
+    </div>
+    <div class="nsbox_detail">
+      <div class="nsbox_detail_info">
+        1.VIP折扣卡每位用户限购1张，需验证手机号，新浪彩通承诺对个人信息严格保密。<br/>
+        2.VIP卡适用范围：2016-2017赛季超4000场足球赛事、NBA赛事的全部玩法。
+      </div>
+      <div class="nsbox_detail_icon"><span></span></div>
+      <div class="nsbox_detail_more">
+        a.白金VIP卡限量发售188张，单价3888元，全场6折消费特权。<br/>
+        b.金卡VIP卡限量发售888张，单价888元，全场7.5折消费特权。<br/>
+        c.银卡VIP卡限量发售8888张，单价188元，全场9折消费特权。<br/>
+        3. VIP卡使用有效期截至2017年6月30日23:59:59，逾期作废。<br/>
+        4.“vip折扣卡”、“充值卡”及“首轮尝鲜包”三种优惠，不可相互叠加使用。
+      </div>
+    </div>
+  </div>
+  <!-- 充值卡热促  80元玩赚新赛季 -->
+  <div id="ns_box01" class="nsbox" data-box="ns_02">
+    <div class="nsbox_head">
+      <img src="./i/ns_t2.png" alt="充值卡热促  80元玩赚新赛季">
+    </div>
+    <div class="height17"></div>
+    <div class="nsbox_package">
+      <div class="nsbox_rp yp_pay" data-box="ns_02" data-idx="0">
+        <div class="rp_discount"><em>8</em>折</div>
+        <div class="rp_price">¥<em>80</em></div>
+        <div class="rp_price_info">
+          <span class="rp_price_old">
+            原价<em>100</em>元
+          </span>
+          立省<em>20</em>元
+        </div>
+      </div>
+      <div class="nsbox_rp nsbox_rp1 yp_pay" data-box="ns_02" data-idx="1">
+        <div class="rp_discount"><em>7</em>折</div>
+        <div class="rp_price">¥<em>350</em></div>
+        <div class="rp_price_info">
+          <span class="rp_price_old">
+            原价<em>500</em>元
+          </span>
+          立省<em>150</em>元
+        </div>
+      </div>
+    </div>
+    <div class="nsbox_package">
+      <div class="nsbox_rp yp_pay" data-box="ns_02" data-idx="2">
+        <div class="rp_discount"><em>6</em>折</div>
+        <div class="rp_price">¥<em>1200</em></div>
+        <div class="rp_price_info">
+          <span class="rp_price_old">
+            原价<em>2000</em>元
+          </span>
+          立省<em>800</em>元
+        </div>
+      </div>
+      <div class="nsbox_rp nsbox_rp1 yp_pay" data-box="ns_02" data-idx="3">
+        <div class="rp_discount"><em>5</em>折</div>
+        <div class="rp_price">¥<em>2500</em></div>
+        <div class="rp_price_info">
+          <span class="rp_price_old">
+            原价<em>5000</em>元
+          </span>
+          立省<em>2500</em>元
+        </div>
+      </div>
+    </div>
+    <div class="nsbox_detail">
+      1.充值卡不限购买数量，可叠加使用于购买小炮的足球、篮球等全部产品。<br/>
+      2. “vip折扣卡”、“充值卡”及“首轮尝鲜包”三种优惠，不可相互叠加使用。
+    </div>
+  </div>
+  <!-- 首轮尝鲜礼包  足彩发烧友必备 -->
+  <div id="ns_box02" class="nsbox" data-box="ns_03">
+    <div class="nsbox_head">
+      <img src="./i/ns_t3.png" alt="首轮尝鲜礼包  足彩发烧友必备">
+    </div>
+    <div id="ns_matches">
+      <script type="text/html" id="ns_03_tmp">
+        {{each data as value index}}
+          <div class="ns_match">
+            <div class="nsm_head">
+              <div class="nsm_title"><em>{{value.packname}}</em>首轮尝鲜包</div>
+              <div class="nsm_st nsm_st0">
+                <em class="nsm_st_count">{{value.count}}</em> 场 <em class="nsm_del">{{value.oldprice}}</em>元
+              </div>
+              <div class="nsm_st nsm_st1">
+                <em class="nsm_st_count">{{getPriceAll(value.count)}}</em> 场 <em class="nsm_del">{{getPriceAll(value.oldprice)}}</em>元
+              </div>
+            </div>
+            <div class="nsm_main">
+              <div class="nsm_flag">
+                {{# getFlag(index,value.packname)}}
+              </div>
+              <div class="nsm_input">
+                <div class="{{ getTeamLi(value.z_sx)}}" data-type="sx"><span class="radio_icon"></span>亚<span class="pl15"></span>盘</div>
+                <div class="{{ getTeamLi(value.z_spf)}}" data-type="spf"><span class="radio_icon"></span>胜平负</div>
+                <div class="{{ getTeamLi(value.z_dx)}}" data-type="dx"><span class="radio_icon"></span>大小球</div>
+                <div class="{{ getTeamLi(value.z_all)}}" data-type="all"><span class="radio_icon"></span>全<span class="pl15"></span>包</div>
+              </div>
+            </div>
+            <div class="{{ getTeamBtn(value.status)}}" data-box="ns_03" data-idx="{{index}}">
+              <div class="nsmb_price nsm_st0">¥<em class="nsmb_money">{{value.price}}</em></div>
+              <div class="nsmb_price nsm_st1">¥<em class="nsmb_money">{{getPriceAll(value.price)}}</em></div>
+              <div class="nsmb_pay">{{ getMsg(value)}}</div>
+            </div>
+          </div>
+        {{/each}}
+      </script>
+    </div>
+
+    <div class="nsbox_detail">
+      <div class="nsbox_detail_info">
+        1.“德甲首轮尝鲜礼包”为德甲2016-17赛季首轮9场赛事预售礼包，单一玩法原价261元，现在预订只需108元。<br/>
+        2.“英超、意甲、西甲首轮尝鲜礼包”为2016-17赛季英超、意甲、西甲三大联赛首轮10场赛事预售礼包，单一联赛单一玩法原价均为290元，现在预订只需118元。
+      </div>
+      <div class="nsbox_detail_icon"><span></span></div>
+      <div class="nsbox_detail_more">
+        3.首轮尝鲜礼包含尝鲜亚盘、胜平负、大小球三个玩法。<br/>
+        4.“首轮ALL-IN礼包”分别包含德甲、英超、意甲、西甲四个联赛的的“亚盘、胜平负、大小球”全包玩法礼包。(提示：为避免重复消费，若已购买单个玩法包，请勿再购买ALL-IN赛事包。)<br/>
+        5. “vip折扣卡”、“充值卡”及“首轮尝鲜包”三种优惠，不可相互叠加使用。
+      </div>
+    </div>
+  </div>
+  <!-- 小炮人工智能2016-17赛季全面升级 -->
+  <div id="ns_box03" class="nsbox" data-box="ns_box03">
+    <div class="nsbox_head">
+      <span class="nsbox_head_icon"></span>
+      <em class="nsbox_head_title">小炮人工智能2016-17赛季全面升级</em>
+    </div>
+    <div class="nsbox_list">
+      <p>算法再度优化升级、清华数学博士高材生鼎力加盟算法团队。</p>
+      <p>伤停、临场动态信息、超300家博彩公司一手信息全面注入。</p>
+      <p>新增资深足球记者、跟队写手等权威专家，提供多维度内幕消息修正模型</p>
+      <p>赛事范围覆盖更广，增加英超、西甲、德甲、意甲、法甲及世界主要联赛、杯赛赛事。</p>
+      <p>修正并完善比赛数据模型，对球队、球员能力及状态等影响因素全面建模，将射门精准度、传威胁球能力、抢断能力等数值加权，对比赛结果判断分析更为全面准确。</p>
+      <p>修正并完善盘口数据模型维度，通过对即时欧赔变化比对、即时澳盘水位变化趋势跟踪，结合欧亚比对数值、历史同赔数据、相同球队开盘手法模拟、异常赔率提取等全面分析法，对模型进行二次加权模拟赛果。</p>
+      <p>修正并完善交易量信息，对投注比例、必发交易实时变量进行全方位跟踪，合理数值加权判断最终赛果。</p>
+    </div>
+  </div>
+  <!-- 底部 -->
+  <link rel="import" href="h/footer.html?__inline">
+
+  <!-- 弹出层 html start -->
+   <link rel="import" href="h/popup.html?__inline">
+  <!-- 弹出层 html end -->
+
+  <script src="./j/lib/jquery-2.2.4.min.js"></script>
+  <script type="text/javascript" src="http://i.sso.sina.com.cn/js/ssologin.js"></script>
+  <script type="text/javascript" src="http://i.sso.sina.com.cn/js/outlogin_layer_mobile.js" charset="utf-8"></script>
+  <script src="./j/newseason.js"></script>
+</body>
+
+</html>
