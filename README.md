@@ -19,7 +19,7 @@ newseason.js 需要中修改项：
 ##url
 ```
 PC:http://euro.sina.com.cn/lottery/1617season.html
-wap:http://euro.sina.com.cn/lottery/1617season_wap.html
+wap:http://euro.sina.com.cn/lottery/1617season_wap.html?from=wap
 ```
 
 
@@ -32,5 +32,31 @@ wap:http://euro.sina.com.cn/lottery/1617season_wap.html
 
 ```
 
+```
+禁用滚动条  必加
+#mask{
+  pointer-events: all;
+}
+
+var $mask = document.getElementById("mask");
+$mask && $mask.addEventListener("touchmove", function(e) {
+  e.preventDefault()
+}, false);
+```
+
+```
+360的宽度是华为android手机
+@media only screen and (min-width: 360px) and (max-width: 374px){}
+@media only screen and (min-width: 375px) and (max-width: 413px){}
+@media only screen and (min-width: 414px) and (max-width: 499px){}
+@media only screen and (min-width: 500px){}
+```
+
+
+android  Galaxy S5    宽度 360
+ios      iphone5      宽度 320
+ios      iphone6      宽度 375
+ios      iphone6 Plus 宽度 414
+pc       max-width    宽度 500
 
 

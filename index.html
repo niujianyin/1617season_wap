@@ -130,7 +130,10 @@
                 <em class="nsm_st_count">{{value.count}}</em> 场 <em class="nsm_del">{{value.oldprice}}</em>元
               </div>
               <div class="nsm_st nsm_st1">
-                <em class="nsm_st_count">{{getPriceAll(value.count)}}</em> 场 <em class="nsm_del">{{getPriceAll(value.oldprice)}}</em>元
+                <em class="nsm_st_count">{{value.count}}</em> 场两个包 <em class="nsm_del">{{getPriceDouble(value.oldprice)}}</em>元
+              </div>
+              <div class="nsm_st nsm_st2">
+                <em class="nsm_st_count">{{value.count}}</em> 场全包 <em class="nsm_del">{{getPriceAll(value.oldprice)}}</em>元
               </div>
             </div>
             <div class="nsm_main">
@@ -138,15 +141,16 @@
                 {{# getFlag(index,value.packname)}}
               </div>
               <div class="nsm_input">
-                <div class="{{ getTeamLi(value.z_sx)}}" data-type="sx"><span class="radio_icon"></span>亚<span class="pl15"></span>盘</div>
-                <div class="{{ getTeamLi(value.z_spf)}}" data-type="spf"><span class="radio_icon"></span>胜平负</div>
-                <div class="{{ getTeamLi(value.z_dx)}}" data-type="dx"><span class="radio_icon"></span>大小球</div>
-                <div class="{{ getTeamLi(value.z_all)}}" data-type="all"><span class="radio_icon"></span>全<span class="pl15"></span>包</div>
+                <div class="{{ getTeamLi(value.z_sx)}}" data-type="z_sx"><span class="radio_icon"></span>亚<span class="pl15"></span>盘</div>
+                <div class="{{ getTeamLi(value.z_spf)}}" data-type="z_spf"><span class="radio_icon"></span>胜平负</div>
+                <div class="{{ getTeamLi(value.z_dx)}}" data-type="z_dx"><span class="radio_icon"></span>大小球</div>
+                <div class="nsm_radio_all" data-type="z_all">全<span class="pl15"></span>包</div>
               </div>
             </div>
             <div class="{{ getTeamBtn(value.status)}}" data-box="ns_03" data-idx="{{index}}">
               <div class="nsmb_price nsm_st0">¥<em class="nsmb_money">{{value.price}}</em></div>
-              <div class="nsmb_price nsm_st1">¥<em class="nsmb_money">{{getPriceAll(value.price)}}</em></div>
+              <div class="nsmb_price nsm_st1">¥<em class="nsmb_money">{{getPriceDouble(value.price)}}</em></div>
+              <div class="nsmb_price nsm_st2">¥<em class="nsmb_money">{{getPriceAll(value.price)}}</em></div>
               <div class="nsmb_pay">{{ getMsg(value)}}</div>
             </div>
           </div>
@@ -162,7 +166,7 @@
       <div class="nsbox_detail_icon"><span></span></div>
       <div class="nsbox_detail_more">
         3.首轮尝鲜礼包含尝鲜亚盘、胜平负、大小球三个玩法。<br/>
-        4.“首轮ALL-IN礼包”分别包含德甲、英超、意甲、西甲四个联赛的的“亚盘、胜平负、大小球”全包玩法礼包。(提示：为避免重复消费，若已购买单个玩法包，请勿再购买ALL-IN赛事包。)<br/>
+        4.“首轮ALL-IN礼包”分别包含德甲、英超、意甲、西甲四个联赛的的“亚盘、胜平负、大小球”全包玩法礼包(提示：为避免重复消费，若已购买单个玩法包，请勿再购买ALL-IN赛事包)。<br/>
         5. “vip折扣卡”、“充值卡”及“首轮尝鲜包”三种优惠，不可相互叠加使用。
       </div>
     </div>

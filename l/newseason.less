@@ -108,10 +108,9 @@ body{
   z-index: 10;
   width: 100%;
   height: 100%;
-  background-color: #000;
-  opacity: .2;
-  filter: alpha(opacity=20);
+  background-color: rgba(0,0,0,.4);
   display: none;
+  pointer-events: all;
 }
 .popup_box{
   position: absolute;
@@ -432,7 +431,7 @@ body{
 .nsm_st0{
 
 }
-.nsm_st1{
+.nsm_st1,.nsm_st2{
   display: none;
 }
 .nsm_st em{
@@ -469,6 +468,21 @@ body{
   position: relative;
   float: left;
   width: 50%;
+}
+.nsm_radio_all{
+  float: left;
+  background: #224abd;
+  width: 91px;
+  margin-top: 4px;
+  height: 23px;
+  line-height: 21px;
+  border: 1px solid #787878;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 3px;
+  cursor: pointer;
 }
 .radio_icon{
   position: absolute;
@@ -562,6 +576,52 @@ body{
   cursor: pointer;
 }
 
+@media only screen and (min-width: 360px) and (max-width: 374px){
+  .nsbox_card {
+    height: 144px;
+  }
+  #nsbox_card_01 {
+    background: url(/i/ns_card1.jpg) no-repeat center center;
+    background-size: 360px 144px;
+  }
+  #nsbox_card_02 {
+    background: url(/i/ns_card2.jpg) no-repeat center center;
+    background-size: 360px 144px;
+  }
+  #nsbox_card_03 {
+    background: url(/i/ns_card3.jpg) no-repeat center center;
+    background-size: 360px 144px;
+  }
+  .nsbox_card_txt {
+    margin-left: -145px;
+    top: 45px;
+  }
+
+  .nsbox_package {
+    background: url(/i/ns_package.jpg) no-repeat center center;
+    background-size: 360px 182px;
+    min-height: 182px;
+  }
+  .nsbox_rp {
+    width: 163px;
+    margin-left: -165px;
+    cursor: pointer;
+  }
+  .nsbox_rp1 {
+    width: 163px;
+    cursor: pointer;
+    margin-left: 2px;
+  }
+  .rp_discount {
+    right: 5px;
+    top: 6px;
+    font-size: 11px;
+  }
+  .rp_price {
+    padding-top: 50px;
+    height: 80px;
+  }
+} 
 @media only screen and (min-width: 375px) and (max-width: 413px){
   .nsbox_card {
     height: 150px;

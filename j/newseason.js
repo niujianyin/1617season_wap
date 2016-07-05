@@ -169,7 +169,7 @@ __newseason.ns_03 = [{
   //可修改 1为领取 2为已结束   3已领取(3这个状态由账号来判断,不可填)  
   status: '1',
   //不可修改 展示信息 
-  msg: ['', '立即抢购', '已结束', '已购买'],
+  msg: ['', '立即抢购', '已结束', '已购买全包'],
   //可修改 购买价格
   price: '108',
   //可修改 划去的价格
@@ -195,13 +195,13 @@ __newseason.ns_03 = [{
   //可修改 1为领取 2为已结束   3已领取(3这个状态由账号来判断,不可填)  
   status: '1',
   //不可修改 展示信息 
-  msg: ['', '立即抢购', '已结束', '已购买'],
+  msg: ['', '立即抢购', '已结束', '已购买全包'],
   //可修改 购买价格
   price: '118',
   //可修改 划去的价格
   oldprice: '290',
   //不可修改 玩法类型
-  gameType: 'z_spf',
+  gameType: 'z_sx',
   //不可修改 包类型id
   packType: '4',
   //多少场
@@ -221,13 +221,13 @@ __newseason.ns_03 = [{
   //可修改 1为领取 2为已结束   3已领取(3这个状态由账号来判断,不可填)  
   status: '1',
   //不可修改 展示信息 
-  msg: ['', '立即抢购', '已结束', '已购买'],
+  msg: ['', '立即抢购', '已结束', '已购买全包'],
   //可修改 购买价格
   price: '118',
   //可修改 划去的价格
   oldprice: '290',
   //不可修改 玩法类型
-  gameType: 'z_dx',
+  gameType: 'z_sx',
   //不可修改 包类型id
   packType: '4',
   //多少场
@@ -247,7 +247,7 @@ __newseason.ns_03 = [{
   //可修改 1为领取 2为已结束   3已领取(3这个状态由账号来判断,不可填)  
   status: '1',
   //不可修改 展示信息 
-  msg: ['', '立即抢购', '已结束', '已购买'],
+  msg: ['', '立即抢购', '已结束', '已购买全包'],
   //可修改 购买价格
   price: '118',
   //可修改 划去的价格
@@ -536,6 +536,10 @@ util.jsonp1 = function (json) {
   }
 }
 
+var $mask = document.getElementById("mask");
+$mask && $mask.addEventListener("touchmove", function(e) {
+  e.preventDefault()
+}, false);
 // 显示相应的弹层
 function popupShow($layout) {
   var viewData = util.viewData();
@@ -741,12 +745,16 @@ util.yppay = {
     var gameType = edata.gameType;
     var packType = edata.packType;
     var teamId = '';
+    var price = edata.price;
+    var gameTypeArr = gameType.split(",");
+    if(gameTypeArr && gameTypeArr.length > 1){ price = (price-0)*gameTypeArr.length;}
+    var gameTypeStr = edata.gameType.replace(/,/g,'');
     $.ajax({
       url:'http://ai.lottery.sina.com.cn/zc/order/batch.htm?thirdId='+thirdId+'&gameType='+gameType+'&season=2015&packType='+packType+'&teamId='+teamId,
       dataType:'jsonp',
       data: {},
       cache: true,
-      jsonpCallback:"batch_"+thirdId + '_' + gameType + '_' + packType,
+      jsonpCallback:"batch_"+thirdId + '_' + gameTypeStr + '_' + packType,
       type:"get",
       success: function(data) { 
         // 200:有订单记录
@@ -759,13 +767,13 @@ util.yppay = {
           euro_memberid = data.memberId;
           euro_orderid = data.orderLogNo;
           // 显示弹出层
-          $(".popup_money").html('¥'+edata.price+"元");
+          $(".popup_money").html('¥'+price+"元");
           popupShow($popup);
           
         } else if(code == 201){
           euro_memberid = data.memberId;
           // 显示弹出层
-          $(".popup_money").html('¥'+edata.price+"元");
+          $(".popup_money").html('¥'+price+"元");
           popupShow($popup);
         } else if (code == 300) { //未关联注册  
           var nickName = getSinaWbCookieVal('SINA_WB_LOCAL_NICKNAME');
@@ -786,18 +794,21 @@ util.yppay = {
     var packType = edata.packType;
     var teamId = '';
     var price = edata.price;
+    var gameTypeArr = gameType.split(",");
+    if(gameTypeArr && gameTypeArr.length > 1){ price = (price-0)*gameTypeArr.length;}
     if(euro_orderid){
       // 已存在订单号  1.打开新开页面paypre.html  2.显示弹出层 我已支付成功
       self.payStepToPaypre();
       popupShow($popup_canpay);
       return;
     }
+    var gameTypeStr = edata.gameType.replace(/,/g,'');
     $.ajax({
       url:'http://ai.lottery.sina.com.cn/zc/order/batchToPay.htm?memberId='+memberId+'&gameType='+gameType+'&season=2015&packType='+packType+'&teamId='+teamId+'&price='+price,
       dataType:'jsonp',
       data: {},
       cache: true,
-      jsonpCallback:"batchToPay_"+memberId+"_"+gameType+"_"+packType,
+      jsonpCallback:"batchToPay_"+memberId+"_"+gameTypeStr+"_"+packType,
       type:"get",
       success: function(data) {
         var code = data.code;
@@ -828,6 +839,8 @@ util.yppay = {
 
     var thirdId = euro_wbId;
     var price = euro_edata.price;
+    var gameTypeArr = gameType.split(",");
+    if(gameTypeArr && gameTypeArr.length > 1){ price = (price-0)*gameTypeArr.length;}
     var packnameObj = {
       '淘汰赛礼包':'1',
       '全赛事礼包':'2',
@@ -889,12 +902,13 @@ util.yppay = {
     } else {
       url = 'http://ai.lottery.sina.com.cn/zc/order/batchSuc.htm?memberId='+euro_memberid+'&orderNo=&gameType='+euro_edata.gameType+'&season=2015&packType='+euro_edata.packType+'&teamId='+teamId;
     }
+    var gameTypeStr = euro_edata.gameType.replace(/,/g,'');
     $.ajax({
       url:url,
       dataType:'jsonp',
       data: {},
       cache: true,
-      jsonpCallback:"dcSuc_"+euro_edata.gameType+"_"+euro_edata.packType,
+      jsonpCallback:"dcSuc_"+gameTypeStr+"_"+euro_edata.packType,
       type:"get",
       success: function(data) {
         var code = data.code;
@@ -937,8 +951,8 @@ var ypObj = {
           "group":["z_dx","z_sx"],
           "out":["z_dx"],
           "team_dj":["z_sx"],
-          "team_yc":["z_all"],
-          "team_yj":[],
+          "team_yc":["z_sx","z_spf"],
+          "team_yj":["z_sx","z_spf","z_dx"],
           "team_xj":[],
           "memberId":519526
         }
@@ -985,7 +999,6 @@ var ypObj = {
         ypdata['status'] = '3';
       }
     }
-
   },
   render: function(data) {
     var self = this;
@@ -1024,8 +1037,11 @@ var ypObj = {
     template.helper("getTeamBtn", function(status){
       return status == 1? 'yp_pay nsm_bottom':'nsm_bottom bggray'; 
     });
+    template.helper("getPriceDouble", function(price){
+      return (price-0)*2;
+    });
     template.helper("getPriceAll", function(price){
-      return (price-0)*3; 
+      return (price-0)*3;
     });
 
     var data_03 = __newseason.ns_03;
@@ -1043,17 +1059,48 @@ var ypObj = {
       $detail.find(".nsbox_detail_more").show();
     });
     // 尝鲜包
-    var $match;
+    var $match,$selectedPackage,splen;
     $("#ns_matches").on("click",".nsm_radio",function(){
       $match = $(this).closest(".ns_match");
-      $match.find('.nsm_radio').removeClass("selected");
-      $(this).addClass("selected");
-      if($(this).data("type") == 'all'){
-        $match.find('.nsm_st0').hide();
-        $match.find('.nsm_st1').show();
+      if($(this).hasClass("selected")){
+        $(this).removeClass("selected");
       } else {
+        $(this).addClass("selected");
+      }
+      $selectedPackage = $match.find('.selected');
+      splen = $selectedPackage.length;
+      if(splen <= 1){
         $match.find('.nsm_st1').hide();
+        $match.find('.nsm_st2').hide();
         $match.find('.nsm_st0').show();
+      } else if(splen == 2){
+        $match.find('.nsm_st0').hide();
+        $match.find('.nsm_st2').hide();
+        $match.find('.nsm_st1').show();
+      } else if(splen>2){
+        $match.find('.nsm_st0').hide();
+        $match.find('.nsm_st1').hide();
+        $match.find('.nsm_st2').show();
+      }
+    });
+
+    $("#ns_matches").on("click",".nsm_radio_all",function(){
+      $match = $(this).closest(".ns_match");
+      $match.find('.nsm_radio').addClass("selected");
+      $selectedPackage = $match.find('.selected');
+      splen = $selectedPackage.length;
+      if(splen <= 1){
+        $match.find('.nsm_st1').hide();
+        $match.find('.nsm_st2').hide();
+        $match.find('.nsm_st0').show();
+      } else if(splen == 2){
+        $match.find('.nsm_st0').hide();
+        $match.find('.nsm_st2').hide();
+        $match.find('.nsm_st1').show();
+      } else if(splen>2){
+        $match.find('.nsm_st0').hide();
+        $match.find('.nsm_st1').hide();
+        $match.find('.nsm_st2').show();
       }
     });
 
@@ -1061,6 +1108,21 @@ var ypObj = {
       var obj = $(this).data("box");
       var idx = $(this).data("idx");
       euro_edata = __newseason[obj][idx];
+      if(obj == 'ns_03'){
+        var gameTypeArr = [];
+        var $matchSelect = $(this).closest('.ns_match').find('.selected');
+        gameTypeArr = $.map($matchSelect, function(val, key) {
+          return $(val).data("type");
+        });
+        if(gameTypeArr.length <=0){
+          util.alert("请至少选中一个类型的尝鲜包");
+          // $(this).closest('.ns_match').find('.nsm_radio').eq(0).addClass('selected');
+          return;
+        }
+        euro_edata.gameType = gameTypeArr.join(',');
+        // console.log(euro_edata.gameType);
+        // return;
+      }
       //判断登录状态      
       var isLogin = checkLogin();
       if (!isLogin) {
@@ -1123,3 +1185,4 @@ var ypObj = {
   }
 };
 ypObj.init();
+
