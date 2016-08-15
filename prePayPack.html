@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>支付_智能小炮_新浪彩票</title>
+  <meta charset="utf-8">
+  <meta name="keywords" content="欧洲杯,体育彩票,体彩,欧洲杯预测,欧洲杯分析,预测,分析。" />
+  <meta name="description" content="新浪彩通欧洲杯智能结果预测采用大数据和模型算法，对今天进行的欧洲杯赛事的胜负进行分析，提供基于基本面、赔率面和数据面的全面参考。" />
+  <!-- Mobile Devices Support @begin -->
+  <meta name="viewport" content="initial-scale=1.0,user-scalable=no,minimum-scale=1.0, maximum-scale=1.0,width=device-width">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no, email=no">
+  <meta name="msapplication-tap-highlight" content="no" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="browsermode" content="application" />
+  <meta name="x5-page-mode" content="default|app" />
+  <meta name="screen-orientation" content="portrait" />
+  <meta name="x5-orientation" content="portrait" />
+  <!-- Mobile Devices Support @end -->
+  <link rel="stylesheet" href="http://n.sinaimg.cn/sports/lotteuro2016/wap/c/common.css?d=20160815">
+  <script type="text/javascript">
+    //公共全局配置文件
+    var globalConfig = {
+      startTime: new Date().getTime(), //页面开始渲染时间 ， 目前应用于：日志统计、性能统计。
+      isLogin: false
+    }
+    window.getUserInfo = {};
+    window.getUserInfo.aFn = [];
+  </script>
+  <script src="http://mjs.sinaimg.cn/wap/public/suda/201605101615/suda_log.min.js"></script>
+  <link rel="stylesheet" href="http://n.sinaimg.cn/sports/lotteuro2016/wap/c/index_m.css">
+</head>
+
+<body>
+
+  <style type="text/css">
+    .wx_box{
+      position: fixed;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 1000;
+      left: -10px;
+      right: -10px;
+      top: -10px;
+      bottom: -10px;
+      display: none;
+    }
+    .wx_tips{
+      position: absolute;
+      left: 10%;
+      width: 80%;
+      top: 0.3rem;
+    }
+    .wx_tips img{
+      width: 100%;
+    }
+    .pre_way_icon {
+      right: 47px;
+    }
+  </style>
+  <div class="wx_box">
+    <div class="wx_tips">
+      <img src="http://n.sinaimg.cn/sports/lottseason1617/wap/i/wx_tip.png" alt="weixin">
+    </div>
+  </div>
+
+
+  <header class="wrap">
+    <div id="header" class="wrap clearfix">
+      <a href="javascript:;" id="logo"></a>
+      <!-- <a href="http://passport.sina.cn/sso/logout?entry=wapsso&vt=4&r=http%3A%2F%2Fai.lottery.sina.com.cn%2Fwap%2F欧洲杯%2Frf.shtml" class="loginout"> <span>|</span> 退出</a>
+        <a href="http://passport.sina.cn/signin/signin?entry=wapsso&amp;vt=4&amp;backTitle=%e6%96%b0%e6%b5%aa%e5%bd%a9%e9%80%9a&amp;r=http%3A//h5.dev.lottery.sina.com.cn/uc/m/myorder_m.shtml&amp;revalid=1" external class="top-imglogo js-login">
+          <img src="http://n.sinaimg.cn/finance/stockbar/images/face-default.png" />
+        </a> -->
+      <a href="javascript:;" class="loginout"> <span>|</span> 退出</a>
+      <a href="javascript:;" external class="top-imglogo js-login">
+        <img src="http://n.sinaimg.cn/finance/stockbar/images/face-default.png" />
+      </a>
+    </div>
+  </header>
+  <!-- 内容主体 html start -->
+  <div id="container1">
+    <input type="hidden" value="D1608151353091079338" id="orderNo" />
+    <input type="hidden" value="8" id="memberId" />
+    <input type="hidden" value="" id="matchId" />
+    <input type="hidden" value="wap" id="client" />
+    <div class="pre_head">
+      <span class="pre_head_icon"></span>
+      <span class="pre_head_txt">订单支付</span>
+    </div>
+    <div class="pre_info">
+      <table class="pre_table">
+        <tbody>
+          <tr>
+            <td class="td_tit">订单号</td>
+            <td>D1608151353091079338</td>
+          </tr>
+          <tr>
+            <td class="td_tit">类型</td>
+            <td>意甲</td>
+          </tr>
+          <tr>
+            <td class="td_tit">玩法</td>
+            <td>亚盘</td>
+          </tr>
+          <tr>
+            <td class="td_tit">价格</td>
+            <td class="pre_price">118元</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="pre_way">
+      <!-- <a href="javascript:;" id="pre_way_wb" data-way="wb" class="pre_way_btn">微博支付</a> -->
+      <a href="javascript:;" id="pre_way_zfb" data-way="zfb" class="pre_way_btn pre_way_cur">支付宝支付</a>
+      <!-- <a href="javascript:;" id="pre_way_wx" data-way="wx" class="pre_way_btn">微信支付</a> -->
+      <span class="pre_way_icon"></span>
+      <div class="pre_way_shouldpay">
+        应付金额：<span>118</span>元
+      </div>
+    </div>
+    <div class="pre_pay">
+      <input type="checkbox" id="pre_hasRead" checked="checked">
+      <label>我已阅读《新浪智能付费/免费服务使用协议》</label>
+      <a style="background-color: #ff5500;" href="javascript:;" id="pre_pay_btn">立即支付</a>
+    </div>
+  </div>
+  <!-- 内容主体 html end  -->
+  <!-- <div id="mask"></div> -->
+  <div id="pre_popup">
+    <div class="pre_popup_title">《新浪智能付费/免费服务使用协议》</div>
+    <div class="pre_popup_main">
+      在享受智能服务前，请您知悉并同意以下内容：
+      <br> 在享受智能平台服务前，请用户（下称"您"）知悉并同意以下内容：
+      <br> 1、智能平台以及智能发布的内容不作为您投注的依据，您接受智能服务后须独立作出投资决策，风险自担。请您确认自己具有相应的权利能力和行为能力，能够独立承担法律责任。无论付费或是免费服务，都不能确保您获得盈利或本金不受损失。彩票有风险，购买须谨慎。
+      <br> 2、新浪智能平台上所有发布的内容，平台不对内容的准确性负责。不应成为您作出任何投资或其他决定的依据。
+      <br> 3、智能平台享有所发布内容的知识产权，未经智能平台书面许可，您不得对外传播或许可第三人使用服务的全部内容或部分内容，不得通过非官方技术手段获取内容，否则平台有权单方面解除服务关系，服务费用将作为罚金不再退还，平台保留最终诉诸法律、追偿损失的权利。
+      <br> 4、为保障您的权益，请您不要通过其他平台或者线下接受智能的服务，也不要接受非本平台约定的服务，否则由此造成的风险和损失由您自行承担，与平台无关，平台并对此不承担任何责任。
+      <br> 5、请您对自己的各类账号密码严格保密，勿将个人资产交由其他人管理，否则由此导致的风险和损失由您自行承担，与平台无关，平台对此不承担任何责任。
+      <br> 6、因无法预测或无法控制的设备故障、通讯故障、网络故障等技术原因以及其它不可抗力而造成智能平台服务中断的情况，平台不承担责任。
+      <br> 7、智能平台服务主要是赛事的胜负，让分，大小分为主，您在使用上述具体服务时还需同时遵守该项服务具体的服务协议。
+      <br> 8、平台有权在必要时单方修改或变更本协议之内容，增加、减少、修改或变更各类规则，并将通过平台网站公布最新的服务协议及规则，变更后的协议及规则自公布时生效。若您于任何修改或变更本条款后继续使用平台服务，则视为已认真阅读、充分了解并同意接受修改后之协议；若您不同意部分或全部修改条款，则应主动停止使用与变更内容相关的服务。
+      <br> 9、如您已经使用智能平台的服务，则视为您本人已同意本协议以及相应的单项服务协议。
+    </div>
+    <div id="pre_close"><span id="pre_popup_close"></span></div>
+  </div>
+  <!-- 弹出层 html start -->
+  <!-- 弹出层 -->
+  <div id="mask"></div>
+  <!-- 支付-->
+  <div id="popup_layout_pay" class="popup_box">
+    <div class="popup_icon"></div>
+    <a href="javascript:;" class="popup_btn_close"></a>
+    <div class="popup_info">
+      <div class="popup_title">您的订单已提交成功，请尽快付款！</div>
+      <div class="popup_price">应付金额 <span class="popup_money">29元</span></div>
+      <div class="popup_tips">请在23小时内完成付款，付款成功后，您将看到本场比赛推荐~</div>
+    </div>
+    <div class="popup_operate">
+      <div class="popup_pay_box">
+        <a href="javascript:;" onclick="util.payment.openPage()" class="popup_btn_pay">立即支付</a>
+      </div>
+      <a href="javascript:;" class="popup_btn_cancel">取消</a>
+    </div>
+  </div>
+  <!-- 支付应该成功-->
+  <div id="popup_layout_canpay" class="popup_box">
+    <div class="popup_icon1"></div>
+    <a href="javascript:;" class="popup_btn_close"></a>
+    <div class="popup_info">
+      <div class="popup_title">请在新开的页面完成支付操作</div>
+      <div class="popup_price">应付金额 <span class="popup_money">29元</span></div>
+      <div class="popup_tips">付款完成前请不要刷新此窗口～</div>
+    </div>
+    <div class="popup_operate">
+      <div class="popup_pay_box">
+        <a href="javascript:;" class="popup_btn_canpay">我已支付成功</a>
+      </div>
+      <a href="http://ai.lottery.sina.com.cn/uc/m/myorder_m.shtml?from=euro" class="popup_go_order popup_go_order1">没有完成支付</a>
+    </div>
+  </div>
+  <!-- 未支付 -->
+  <div id="popup_layout_nopay" class="popup_box">
+    <div class="popup_icon"></div>
+    <a href="javascript:;" class="popup_btn_close"></a>
+    <div class="popup_info">
+      <div class="popup_title">抱歉！您的订单没有支付成功</div>
+      <div class="popup_price">应付金额 <span class="popup_money">29元</span></div>
+      <div class="popup_tips">请在比赛开始前完成付款，付款成功后，您将看到本场比赛推荐~</div>
+    </div>
+    <div class="popup_operate">
+      <div class="popup_pay_box">
+        <a href="javascript:;" onclick="util.payment.openPage()" class="popup_btn_pay">重新支付</a>
+      </div>
+      <a href="http://ai.lottery.sina.com.cn/uc/m/myorder_m.shtml?from=euro" class="popup_go_order">查看订单</a>
+    </div>
+  </div>
+  <!-- 没有预测数据的提示 -->
+  <div id="popup_layout_msg" class="popup_box">
+    <div class="popup_icon"></div>
+    <a href="javascript:;" class="popup_btn_close"></a>
+    <div class="popup_info">
+      <div id="popup_msg"></div>
+    </div>
+    <div class="popup_operate">
+      <div class="popup_pay_box">
+        <a href="javascript:;" class="popup_btn_know">知道了</a>
+      </div>
+    </div>
+  </div>
+  <!-- 弹出层 html end -->
+  <!-- 底部 html start -->
+  <footer class="wrap">
+    <div id="footer" class="wrap">
+      <div class="footer_relate_link">
+        <a href="http://caitong.sina.com.cn/intro/about.shtml">关于我们</a>
+        <span>|</span>
+        <a href="http://lottery.sina.com.cn" target="_blank">新浪彩票</a>
+        <span>|</span>
+        <a href="http://caitong.sina.com.cn" target="_blank">新浪彩通</a>
+      </div>
+      <div class="footer_copyright">
+        Copyright ©新浪彩通 ALL Righhts Reserved
+      </div>
+    </div>
+  </footer>
+  <script src="http://n.sinaimg.cn/sports/lotteuro2016/wap/j/lib/jquery-2.2.4.min.js"></script>
+  <script type="text/javascript" src="http://i.sso.sina.com.cn/js/ssologin.js"></script>
+  <script type="text/javascript" src="http://i.sso.sina.com.cn/js/outlogin_layer_mobile.js" charset="utf-8"></script>
+  <script src="http://n.sinaimg.cn/sports/lotteuro2016/wap/j/lib/common.js"></script>
+  <!-- // <script src="http://n.sinaimg.cn/sports/lotteuro2016/wap/j/payprepack.js?d=20160815"></script> -->
+  <script src="./j/payprepack.js?d=20160815"></script>
+</body>
+
+</html>

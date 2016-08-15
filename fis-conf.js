@@ -95,9 +95,17 @@ fis.media('prod1')
   .match('/*.sh', {
     release: false
   })
-  .match('j/(**).js', {
-    // optimizer: fis.plugin('uglify-js'),
-    release: '/j/$1'
+  .match('j/newseason.js', {
+    optimizer: fis.plugin('uglify-js'),
+    release: '/j/newseason.js'
+  })
+  .match('j/payprepack.js', {
+    optimizer: fis.plugin('uglify-js'),
+    release: '/j/payprepack.js'
+  })
+  .match('j/payprecard.js', {
+    optimizer: fis.plugin('uglify-js'),
+    release: '/j/payprecard.js'
   })
   .match('l/(*).less', {
     optimizer: fis.plugin('clean-css'),

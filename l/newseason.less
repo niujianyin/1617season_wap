@@ -1,5 +1,26 @@
 @import url('./constant.less');
 @import url('./reset.less');
+.wx_box{
+  position: fixed;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+  left: -10px;
+  right: -10px;
+  top: -10px;
+  bottom: -10px;
+  display: none;
+}
+.wx_tips{
+  position: absolute;
+  left: 10%;
+  width: 80%;
+  top: 0.3rem;
+}
+.wx_tips img{
+  width: 100%;
+}
+
+
 body{
   max-width: 500px;
   margin: auto;
@@ -273,6 +294,21 @@ body{
   background: url(../i/ns_card3.jpg) no-repeat center center;
   background-size: 320px 128px;
 }
+.nsbox_card_btn{
+  position: absolute;
+  right: 26px;
+  bottom: 21px;
+  width: 128px;
+  height: 32px;
+  border-radius: 16px;
+  background: #ccc;
+  text-align: center;
+  line-height: 32px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  display: none;
+}
 .nsbox_card_txt{
   position: absolute;
   left: 50%;
@@ -484,6 +520,22 @@ body{
   border-radius: 3px;
   cursor: pointer;
 }
+.nsm_radio_all_no{
+  float: left;
+  background: #ccc;
+  width: 91px;
+  margin-top: 4px;
+  height: 23px;
+  line-height: 21px;
+  border: 1px solid #787878;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 3px;
+  cursor: pointer;
+  display: none;
+}
 .radio_icon{
   position: absolute;
   left: 0;
@@ -596,6 +648,15 @@ body{
     margin-left: -145px;
     top: 45px;
   }
+  .nsbox_card_btn{
+    right: 37px;
+    bottom: 23px;
+    width: 135px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 18px;
+    font-size: 18px;
+  }
 
   .nsbox_package {
     background: url(/i/ns_package.jpg) no-repeat center center;
@@ -641,6 +702,15 @@ body{
   .nsbox_card_txt {
     margin-left: -152px;
     top: 45px;
+  }
+  .nsbox_card_btn{
+    right: 38px;
+    bottom: 24px;
+    width: 142px;
+    height: 38px;
+    line-height: 38px;
+    border-radius: 18px;
+    font-size: 18px;
   }
 
   .nsbox_package {
@@ -688,6 +758,16 @@ body{
     margin-left: -170px;
     top: 50px;
     font-size: 12px;
+  }
+
+  .nsbox_card_btn{
+    right: 41px;
+    bottom: 25px;
+    width: 157px;
+    height: 42px;
+    border-radius: 25px;
+    line-height: 42px;
+    font-size: 18px;
   }
 
   .nsbox_package {
@@ -738,6 +818,16 @@ body{
     font-size: 14px;
   }
 
+  .nsbox_card_btn{
+    right: 50px;
+    bottom: 32px;
+    width: 190px;
+    height: 50px;
+    border-radius: 25px;
+    line-height: 50px;
+    font-size: 18px;
+  }
+
   .nsbox_package {
     background: url(/i/ns_package.jpg) no-repeat center center;
     background-size: 500px 250px;
@@ -764,6 +854,17 @@ body{
   }
 }
 
-
-
+.yp_order_first{
+  overflow: hidden;
+}
+.nsbox_head_t0{
+  width: 100%;
+}
+.nsbox_detail{
+  
+}
+.textHeader{
+  font-weight: bold;
+  color: #333;
+}
 
