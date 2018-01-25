@@ -14,17 +14,17 @@ __inline('./lib/template.js');
 
 // 手动控制区域
 
-// 人工智能小炮VIP 
+// 人工智能小炮VIP
 __newseason.ns_01 = [{
-  //不可修改 id 
+  //不可修改 id
   id: 'ns_01_01',
-  //不可修改 
+  //不可修改
   name: '人工智能小炮VIP',
-  //不可修改 
+  //不可修改
   packname: '白金卡',
-  //可修改 1为领取 2为已售罄 3已领取(3这个状态由账号来判断,不可填)  
+  //可修改 1为领取 2为已售罄 3已领取(3这个状态由账号来判断,不可填)
   status: '1',
-  //不可修改 展示信息 
+  //不可修改 展示信息
   msg: ['', '立即抢购', '已售罄', '已购买'],
   //可修改 购买价格
   price: '3888',
@@ -37,15 +37,15 @@ __newseason.ns_01 = [{
   //剩余卡数量
   count: '188'
 }, {
-  //不可修改 id 
+  //不可修改 id
   id: 'ns_01_02',
-  //不可修改 
+  //不可修改
   name: '人工智能小炮VIP',
-  //不可修改 
+  //不可修改
   packname: '金卡',
-  //可修改 1为领取 2为已售罄   3已领取(3这个状态由账号来判断,不可填)  
+  //可修改 1为领取 2为已售罄   3已领取(3这个状态由账号来判断,不可填)
   status: '1',
-  //不可修改 展示信息 
+  //不可修改 展示信息
   msg: ['', '立即抢购', '已售罄', '已购买'],
   //可修改 购买价格
   price: '888',
@@ -58,15 +58,15 @@ __newseason.ns_01 = [{
   //剩余卡数量
   count: '888'
 }, {
-  //不可修改 id 
+  //不可修改 id
   id: 'ns_01_03',
-  //不可修改 
+  //不可修改
   name: '人工智能小炮VIP',
-  //不可修改 
+  //不可修改
   packname: '银卡',
-  //可修改 1为领取 2为已售罄   3已领取(3这个状态由账号来判断,不可填)  
+  //可修改 1为领取 2为已售罄   3已领取(3这个状态由账号来判断,不可填)
   status: '1',
-  //不可修改 展示信息 
+  //不可修改 展示信息
   msg: ['', '立即抢购', '已售罄', '已购买'],
   //可修改 购买价格
   price: '188',
@@ -80,17 +80,17 @@ __newseason.ns_01 = [{
   count: '8888'
 }];
 
-// 充值卡热促 
+// 充值卡热促
 __newseason.ns_02 = [{
-  //不可修改 id 
+  //不可修改 id
   id: 'ns_02_01',
-  //不可修改 
+  //不可修改
   name: '充值卡热促',
-  //不可修改 
+  //不可修改
   packname: '充值卡热促100',
-  //可修改 1为领取 2为已结束   3已领取(3这个状态由账号来判断,不可填)  
+  //可修改 1为领取 2为已结束   3已领取(3这个状态由账号来判断,不可填)
   status: '1',
-  //不可修改 展示信息 
+  //不可修改 展示信息
   msg: ['', '立即抢购', '已结束', '已购买'],
   //可修改 购买价格
   price: '80',
@@ -103,15 +103,15 @@ __newseason.ns_02 = [{
   //剩余卡数量
   count: ''
 }, {
-  //不可修改 id 
+  //不可修改 id
   id: 'ns_02_02',
-  //不可修改 
+  //不可修改
   name: '充值卡热促',
-  //不可修改 
+  //不可修改
   packname: '充值卡热促500',
-  //可修改 1为领取 2为已结束   3已领取(3这个状态由账号来判断,不可填)  
+  //可修改 1为领取 2为已结束   3已领取(3这个状态由账号来判断,不可填)
   status: '1',
-  //不可修改 展示信息 
+  //不可修改 展示信息
   msg: ['', '立即抢购', '已结束', '已购买'],
   //可修改 购买价格
   price: '350',
@@ -124,15 +124,15 @@ __newseason.ns_02 = [{
   //剩余卡数量
   count: ''
 }, {
-  //不可修改 id 
+  //不可修改 id
   id: 'ns_02_03',
-  //不可修改 
+  //不可修改
   name: '充值卡热促',
-  //不可修改 
+  //不可修改
   packname: '充值卡热促2000',
-  //可修改 1为领取 2为已结束   3已领取(3这个状态由账号来判断,不可填)  
+  //可修改 1为领取 2为已结束   3已领取(3这个状态由账号来判断,不可填)
   status: '1',
-  //不可修改 展示信息 
+  //不可修改 展示信息
   msg: ['', '立即抢购', '已结束', '已购买'],
   //可修改 购买价格
   price: '1200',
@@ -145,15 +145,15 @@ __newseason.ns_02 = [{
   //剩余卡数量
   count: ''
 }, {
-  //不可修改 id 
+  //不可修改 id
   id: 'ns_02_04',
-  //不可修改 
+  //不可修改
   name: '充值卡热促',
-  //不可修改 
+  //不可修改
   packname: '充值卡热促5000',
-  //可修改 1为领取 2为已结束   3已领取(3这个状态由账号来判断,不可填)  
+  //可修改 1为领取 2为已结束   3已领取(3这个状态由账号来判断,不可填)
   status: '1',
-  //不可修改 展示信息 
+  //不可修改 展示信息
   msg: ['', '立即抢购', '已结束', '已购买'],
   //可修改 购买价格
   price: '2500',
@@ -207,19 +207,19 @@ util.windowOpen = function(url,target){
   document.body.removeChild(a);
 }
 
-util.dateFormatFmt = function (date, fmt) { 
+util.dateFormatFmt = function (date, fmt) {
   if(Object.prototype.toString.call(date) == "[object String]"){
     date = date.replace(/-/g, '/');
   }
   date = new Date(date);
   var o = {
-    "M+": date.getMonth() + 1, //月份 
-    "d+": date.getDate(), //日 
-    "h+": date.getHours(), //小时 
-    "m+": date.getMinutes(), //分 
-    "s+": date.getSeconds(), //秒 
-    "q+": Math.floor((date.getMonth() + 3) / 3), //季度 
-    "S": date.getMilliseconds() //毫秒 
+    "M+": date.getMonth() + 1, //月份
+    "d+": date.getDate(), //日
+    "h+": date.getHours(), //小时
+    "m+": date.getMinutes(), //分
+    "s+": date.getSeconds(), //秒
+    "q+": Math.floor((date.getMonth() + 3) / 3), //季度
+    "S": date.getMilliseconds() //毫秒
   };
   if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (date.getFullYear() + "").substr(4 - RegExp.$1.length));
   for (var k in o)
@@ -321,8 +321,8 @@ util.cookie = (function(doc, win){
     setItem: function(key, value, expiresDays){
       var time = new Date();
       if(expiresDays){
-        //将time设置为 expiresDays 天以后的时间 
-        time.setTime(time.getTime()+expiresDays*24*3600*1000); 
+        //将time设置为 expiresDays 天以后的时间
+        time.setTime(time.getTime()+expiresDays*24*3600*1000);
       } else {
         time.setFullYear(time.getFullYear() + 1);
       }
@@ -334,12 +334,12 @@ util.cookie = (function(doc, win){
 
         doc.cookie = key + '=' + win.encodeURIComponent(value) + '; expires=' + time.toGMTString() + ';';
       }
-      
+
     },
     removeItem: function(key){
       // alert(key);
       var time = new Date();
-      time.setDate(time.getDate()-1); 
+      time.setDate(time.getDate()-1);
       doc.cookie = key + '=0; expires=' + time.toGMTString();
       // alert(util.cookie.getItem("fstar_cityLoc"));
     //   var self = this;
@@ -406,6 +406,27 @@ util.getSinaWbCookieVal = function(name) {
   return null;
 }
 
+function setSinaWbCookie (name, value, domain, expires) {
+  domain = domain || document.domain;
+  if (typeof(expires) == 'undefiend' || expires == null || expires == '') {
+    document.cookie = name + "=" + encodeURIComponent(value) + "; path=" + "/" + "; domain=" + domain;
+  } else {
+    var expTimes = expires * 1000;
+    var expDate = new Date();
+    expDate.setTime(expDate.getTime() + expTimes);
+    document.cookie = name + "=" + encodeURIComponent(value) + ";expires=" + expDate.toGMTString() + "; path=" + "/" + "; domain=" + domain;
+  }
+}
+
+function getSinaWbCookieVal(name) {
+  var cookieArr = document.cookie.replace(/\s/g, "").split(';');
+  for (var i = 0; i < cookieArr.length; i++) {
+    var tempObj = cookieArr[i].split('=');
+    if (tempObj[0] == name)
+      return decodeURIComponent(tempObj[1]);
+  }
+  return null;
+}
 util.jsonp1 = function (json) {
   json.data = json.data || {};
   json.timeout = json.timeout || 0;
@@ -626,26 +647,28 @@ var euro_edata = {
 };
 // 微博id
 window.check300=false;
-// var euro_wbId = '2007294495';
-var euro_wbId = '';
+// var util.wbId = '2007294495';
 util.payduing={};
 util.money = {};
+var euro_vip= '';
 util.yppay = {
   getwbid: function(){
     //判断登录状态
-    var isLogin = checkLogin();
+    var isLogin = window.checkLogin();
     if(!isLogin){
       return false;
     } else {
-      var uId = util.getSinaWbCookieVal('SINA_WB_LOCAL_NICKNAME_UID');
-      euro_wbId = util.wbId || uId; 
-      return euro_wbId;
-    } 
+      var nickName = getSinaWbCookieVal('SINA_WB_LOCAL_NICKNAME');
+      var uId = getSinaWbCookieVal('SINA_WB_LOCAL_NICKNAME_UID');
+      if(uId === "undefined"){ uId = '';}
+      util.wbId = util.wbId || uId || util.getQueryString('wbId');
+      return util.wbId;
+    }
   },
   checkwbid: function(){
     // 再次判断一次wbId
-    if(euro_wbId && euro_wbId != "undefined"){
-      return euro_wbId;
+    if(util.wbId && util.wbId != "undefined"){
+      return util.wbId;
     } else {
       var isLogin = window.checkLogin();
       if(!isLogin){
@@ -653,12 +676,13 @@ util.yppay = {
         return false;
       } else {
         var uId = util.getSinaWbCookieVal('SINA_WB_LOCAL_NICKNAME_UID');
-        euro_wbId = util.wbId || uId; 
-        if(!euro_wbId || euro_wbId == "undefined"){
+        if(uId == "undefined"){ uId = '';}
+        util.wbId = util.wbId || uId;
+        if(!util.wbId || util.wbId == "undefined"){
           util.alert("登录账号异常，请重新登录");
           return false;
         }
-        return euro_wbId;
+        return util.wbId;
       }
     }
   },
@@ -666,18 +690,21 @@ util.yppay = {
   payStep1: function(){
     var self = this;
     if(!self.checkwbid()){ return;};
-    var thirdId = euro_wbId;
+    var thirdId = util.wbId;
     edata = euro_edata;
     var gameType = edata.gameType;
     var packType = edata.packType;
     var price = edata.price;
     if(gameType == 'z5_all'){ price = (price-0)*3;}
+    var round = edata.round;
+    var packname = edata.packname;
+
 
     $.ajax({
-      url: 'http://ai.lottery.sina.com.cn/five/batch.htm?thirdId=' + thirdId + '&gameType=' + gameType + '&season=2016&packType=' + packType,
+      url: 'http://ai.lottery.sina.com.cn/five/batch.htm?thirdId=' + thirdId + '&gameType=' + gameType + '&season=2016&packType=' + packType+'&round=' + round,
       dataType:'jsonp',
       data: {},
-      cache: true,
+      cache: false,
       jsonpCallback:"batch_" + gameType + '_' + packType,
       type:"get",
       success: function(data) {
@@ -687,20 +714,20 @@ util.yppay = {
         util.log(data);
         var code = data.code;
         euro_orderid = '';
-        
+
         if (code == 200) {
           euro_memberid = data.memberId;
           euro_orderid = data.orderLogNo;
           // 显示弹出层
-          $(".popup_money").html('¥'+price+"元");
+          $(".popup_money").html('¥'+price+'元<span style="padding-left:20px;">('+packname+'第'+round+'轮)</span>');
           popupShow($popup);
-          
+
         } else if(code == 201){
           euro_memberid = data.memberId;
           // 显示弹出层
-          $(".popup_money").html('¥'+price+"元");
+          $(".popup_money").html('¥'+price+'元<span style="padding-left:20px;">('+packname+'第'+round+'轮)</span>');
           popupShow($popup);
-        } else if (code == 300) { //未关联注册  
+        } else if (code == 300) { //未关联注册
           var nickName = getSinaWbCookieVal('SINA_WB_LOCAL_NICKNAME');
           registerForm(thirdId, nickName, 1); //转发到用户中心注册页面
         } else {
@@ -713,13 +740,14 @@ util.yppay = {
   payStep2: function(){
     // alert('step2:'+euro_orderid);
     var self = this;
-    if(!self.checkwbid()){ return;};
+    if(!self.checkwbid()){ return;}
     var memberId = euro_memberid;
     var edata = euro_edata;
     var gameType = edata.gameType;
     var packType = edata.packType;
     var price = edata.price;
     if(gameType == 'z5_all'){ price = (price-0)*3;}
+    var round = edata.round;
     if(euro_orderid){
       // alert('test:'+euro_orderid);
       // 已存在订单号  1.打开新开页面paypre.html  2.显示弹出层 我已支付成功
@@ -727,12 +755,17 @@ util.yppay = {
       // popupShow($popup_canpay);
       return;
     }
+
+    var hasVip = '';
+    if(euro_vip){
+      hasVip = '&vip='+ euro_vip
+    }
     // alert('http://odds.sports.sina.com.cn/odds/giftpay/batchToPay?memberId=' + memberId + '&gameType=' + gameType + '&season=2016&packType=' + packType + '&price=' + price + '&format=json');
     $.ajax({
-      url: 'http://odds.sports.sina.com.cn/odds/giftpay/batchToPay?memberId=' + memberId + '&gameType=' + gameType + '&season=2016&packType=' + packType + '&price=' + price + '&format=json',
+      url: 'http://odds.sports.sina.com.cn/odds/giftpay/batchToPay?memberId=' + memberId + '&gameType=' + gameType + '&season=2016&packType=' + packType + '&price=' + price + '&round=' + round+hasVip+'&format=json',
       dataType:'jsonp',
       data: {},
-      cache: true,
+      cache: false,
       jsonpCallback:"batchToPay_"+memberId+"_"+gameType+"_"+packType,
       type:"get",
       success: function(data) {
@@ -742,7 +775,7 @@ util.yppay = {
           euro_orderid = data.orderLogNo;
           self.payStepToPaypre();
           popupShow($popup_canpay);
-        }else if (code == 300) { //未关联注册  
+        }else if (code == 300) { //未关联注册
           var nickName = getSinaWbCookieVal('SINA_WB_LOCAL_NICKNAME');
           registerForm(thirdId, nickName, 1); //转发到用户中心注册页面
         } else {
@@ -754,7 +787,7 @@ util.yppay = {
 
   payStepToPaypre: function() {
     var self = this;
-    if(euro_wbId && euro_wbId != "undefined"){
+    if(util.wbId && util.wbId != "undefined"){
 
     } else {
       util.alert("登录账号异常，请重新登录");
@@ -762,14 +795,14 @@ util.yppay = {
     }
     var param_data = {};
     param_data.memberId = euro_memberid;
-    param_data.wbId = euro_wbId;
+    param_data.wbId = util.wbId;
     param_data.orderLogNo = euro_orderid;
 
     param_data.packname = euro_edata.packname;
     param_data.gameType = euro_edata.gameType;
     var info = JSON.stringify(param_data);
 
-    var thirdId = euro_wbId;
+    var thirdId = util.wbId;
     var price = euro_edata.price;
     if(euro_edata.gameType == 'z5_all'){ price = (price-0)*3;}
     var packnameObj = {
@@ -780,6 +813,8 @@ util.yppay = {
       '英超': '5',
       '意甲': '6',
       '西甲': '7',
+      '法甲': '8',
+      '欧冠': '9',
       '白金卡': '11',
       '金卡': '12',
       '银卡': '13',
@@ -797,56 +832,28 @@ util.yppay = {
     // window.newWin.location.replace(actionUrl);
     window.location.href = actionUrl;
   },
-
-  // step4 在新页面 http://ai.lottery.sina.com.cn//nba/payweb/pre.htm 立即支付按钮
-  payStep4: function(orderNo,memberId,chargeWay){
-    var self = this;
-    if(!self.checkwbid()){ return;};
-    $.ajax({
-      url:'http://ai.lottery.sina.com.cn/zc/order/batchPay.htm?memberId='+memberId+'&orderNo='+orderNo+'&chargeWay='+chargeWay,
-      dataType:'jsonp',
-      data: {},
-      cache: true,
-      jsonpCallback:"dcPay_"+orderNo+"_"+memberId+"_"+chargeWay,
-      type:"get",
-      success: function(data) {
-        var code = data.code;
-        // util.windowOpen("http://ai.lottery.daily.2caipiao.com/sina-payment/charge.do?gameType=z_dx&amount=29.00&clientType=4&chargeWay=4&matchId=139180&memberId=519526&sign=99db726978f67fd12d8ebcf89f12c20f&orderNo=D1605261057018327995",'_self');
-        if(code && code == "200"){
-          // 跳转到真正的支付页面
-          window.location.href = data.redirectURL;
-        }else if (code == 300) { //未关联注册  
-          var nickName = getSinaWbCookieVal('SINA_WB_LOCAL_NICKNAME');
-          registerForm(thirdId, nickName, 1); //转发到用户中心注册页面
-        }  else {
-          util.alert(data.msg);
-        }
-      }
-    });
-  },
-
   // step5 弹出层 我已支付成功按钮
   payStep5: function(){
     var self = this;
     if(!self.checkwbid()){ return;};
     var url = '';
     if (euro_orderid) {
-      url = 'http://ai.lottery.sina.com.cn/five/batchSuc.htm?orderNo=' + euro_orderid + '&memberId=' + euro_memberid + '&gameType=' + euro_edata.gameType + '&season=2016&packType=' + euro_edata.packType;
+      url = 'http://ai.lottery.sina.com.cn/five/batchSuc.htm?orderNo=' + euro_orderid + '&memberId=' + euro_memberid + '&gameType=' + euro_edata.gameType + '&season=2016&packType=' + euro_edata.packType + '&round=' + edata.round;
     } else {
-      url = 'http://ai.lottery.sina.com.cn/five/batchSuc.htm?orderNo=' + '&memberId=' + euro_memberid + '&gameType=' + euro_edata.gameType + '&season=2016&packType=' + euro_edata.packType;
+      url = 'http://ai.lottery.sina.com.cn/five/batchSuc.htm?orderNo=' + '&memberId=' + euro_memberid + '&gameType=' + euro_edata.gameType + '&season=2016&packType=' + euro_edata.packType + '&round=' + edata.round;
     }
     $.ajax({
       url:url,
       dataType:'jsonp',
       data: {},
-      cache: true,
+      cache: false,
       jsonpCallback:"dcSuc_"+euro_edata.gameType+"_"+euro_edata.packType,
       type:"get",
       success: function(data) {
         var code = data.code;
         if(code == 200){
           location.reload(true);
-        }  else if (code == 300) { //未关联注册  
+        }  else if (code == 300) { //未关联注册
           var nickName = getSinaWbCookieVal('SINA_WB_LOCAL_NICKNAME');
           registerForm(thirdId, nickName, 1); //转发到用户中心注册页面
         } else {
@@ -857,16 +864,18 @@ util.yppay = {
   },
 
   openPage: function(){
+    var self = this;
+    if(!self.checkwbid()){ return;}
     if (whatPay == 'b0' || whatPay == 'b1') {
       // window.newWin = window.open('http://sports.sina.com.cn/js/euro2016_lottery/pay_mid_page.html', '_blank');
       if(window.check300){
         util.alert("未绑定手机号");
         var nickName = getSinaWbCookieVal('SINA_WB_LOCAL_NICKNAME');
-        registerForm(euro_wbId, nickName, 1); 
+        registerForm(util.wbId, nickName, 1);
         //转发到用户中心注册页面
       }else{
         cardPay.payToNew(whatPay);
-      }             
+      }
     } else {
       // window.newWin = window.open('http://sports.sina.com.cn/js/euro2016_lottery/pay_mid_page.html', '_blank');
       util.yppay.payStep2();
@@ -880,14 +889,14 @@ var cardPay = {
     var self = this;
     var param_data = {};
     param_data.memberId = euro_memberid;
-    param_data.wbId = euro_wbId;
+    param_data.wbId = util.wbId;
     param_data.orderLogNo = euro_orderid;
 
     param_data.packname = euro_edata.packname;
     param_data.gameType = euro_edata.gameType;
     var info = JSON.stringify(param_data);
 
-    var thirdId = euro_wbId;
+    var thirdId = util.wbId;
     var price = euro_edata.price;
     var packnameObj = {
       '淘汰赛礼包': '1',
@@ -914,12 +923,12 @@ var cardPay = {
       var actionUrl = 'http://odds.sports.sina.com.cn/uefa/prePayCard?memberId=' + "" + '&wbId=' + param_data.wbId + '&orderLogNo=' + "" + '&packname=' + param_data.packname + '&gameType=' + "" + '&thirdId=' + thirdId + '&amount=' + price + '&pname=' + pname + '&type=vipCard';
       // window.open(actionUrl, "_blank");
       window.location.href = actionUrl;
-      // popupShow(vipMask);
+      popupShow(vipMask);
     } else if (type == "b1") {
       var actionUrl = 'http://odds.sports.sina.com.cn/uefa/prePayCard?memberId=' + "" + '&wbId=' + param_data.wbId + '&orderLogNo=' + "" + '&packname=' + param_data.packname + '&gameType=' + "" + '&thirdId=' + thirdId + '&amount=' + price + '&pname=' + pname + '&type=chgCard';
       // window.open(actionUrl, "_blank");
       window.location.href = actionUrl;
-      // popupShow(czMask);
+      popupShow(czMask);
     }
   }
 };
@@ -929,7 +938,7 @@ var ypObj = {
     // 已经购买
     var self = this;
     if (!util.yppay.getwbid()) {
-      return; 
+      return;
     }
     var data_01 = __newseason.ns_01;
     for(var i=0,len=data_01.length; i<len; i++){
@@ -937,18 +946,19 @@ var ypObj = {
         var item = data_01[ii];
         var price = item['price'];
         $.ajax({
-          url: 'http://odds.sports.sina.com.cn/odds/giftpay/vipCardCheck?thirdId=' + euro_wbId + '&amount='+price+'&hdCode=16001&format=json',
+          url: 'http://odds.sports.sina.com.cn/odds/giftpay/vipCardCheck?thirdId=' + util.wbId + '&amount='+price+'&hdCode=16001&format=json',
           dataType: 'jsonp',
           data: {},
           jsonpCallback: "checkVip"+ii,
           type: "get",
+          cache: false,
           success: function(data) {
             // data ={"result":"error","code":400,"msg":"您已购买过金卡VIP卡了"}
             if(data.code==300){
-              //未关联注册  
+              //未关联注册
               window.check300=true;
             }
-            
+
             if (data.code == 400) {
               if(data.msg.indexOf('白金VIP卡')>-1){
                 data_01[ii].status = 3;
@@ -975,12 +985,21 @@ var ypObj = {
     }
 
     window["checkPack"] = function(){};
+    var data_03 = __newseason.ns_03;
+    var rndString= '';
+    var item;
+    for(var j=0,len=data_03.length; j<len; j++){
+      item = data_03[j];
+      rndString += ('|'+item.packType +'_'+ item.round);
+    }
+    var rndStr= rndString.substring(1);
     $.ajax({
-      url: 'http://ai.lottery.sina.com.cn/five/psn/ckPack.htm?thirdId=' + euro_wbId + '&season=2016',
+      url: 'http://ai.lottery.sina.com.cn/five/psn/ckPack.htm?thirdId=' + util.wbId + '&season=2016&rndStr='+rndStr,
       dataType: 'jsonp',
       data: {},
       jsonpCallback: "checkPack",
       type: "get",
+      cache: false,
       success: function(data) {
         // data = {
         //   "result":"success",
@@ -992,18 +1011,24 @@ var ypObj = {
         //   "memberId":519613
         // }
         if (data.code == 200) {
-          // 首轮尝鲜礼包
-          if (data.deJia1 && data.deJia1.length > 0) {
-            self.hasPurchase(__newseason.ns_03[0],data.deJia1);
+          if (data.deJia && data.deJia.length > 0) {
+            self.hasPurchase(__newseason.ns_03[0],data.deJia);
           }
-          if (data.yinChao1 && data.yinChao1.length > 0) {
-            self.hasPurchase(__newseason.ns_03[1],data.yinChao1);
+          if (data.yinChao && data.yinChao.length > 0) {
+            self.hasPurchase(__newseason.ns_03[1],data.yinChao);
           }
-          if (data.yiJia1 && data.yiJia1.length > 0) {
-            self.hasPurchase(__newseason.ns_03[2],data.yiJia1);
+          if (data.xiJia && data.xiJia.length > 0) {
+            self.hasPurchase(__newseason.ns_03[2],data.xiJia);
           }
-          if (data.xiJia1 && data.xiJia1.length > 0) {
-            self.hasPurchase(__newseason.ns_03[3],data.xiJia1);
+          if (data.yiJia && data.yiJia.length > 0) {
+            self.hasPurchase(__newseason.ns_03[3],data.yiJia);
+          }
+
+          if (data.faJia && data.faJia.length > 0) {
+            self.hasPurchase(__newseason.ns_03[4],data.faJia);
+          }
+          if (data.ouGuan && data.ouGuan.length > 0) {
+            self.hasPurchase(__newseason.ns_03[5],data.ouGuan);
           }
         }
         self.render();
@@ -1047,6 +1072,7 @@ var ypObj = {
       data: {},
       jsonpCallback: "ckCard",
       type: "get",
+      cache: false,
       success: function(data) {
         // var data = {
         //   "白金VIP卡":0,
@@ -1071,19 +1097,19 @@ var ypObj = {
         }
       }
     });
-    
+
     // 首轮尝鲜礼包
-    template.helper("getFlag", function(idx,packname){
-      return '<img src="http://n.sinaimg.cn/sports/lottseason1617/wap/i/ns_flag'+(idx+1)+'.jpg" alt="'+packname+'">';  
+    template.helper("getFlag", function(imgSign,packname){
+      return '<img src="http://n.sinaimg.cn/sports/lottseason1617/pc/i/yp_newSeason/icon_games_'+imgSign+'.png" alt="'+packname+'">';
     });
     template.helper("getTeamLi", function(status){
       return status == 3? 'nsm_haspay':'nsm_radio';
     });
     template.helper("getMsg", function(data){
-      return data.msg[data.status];  
+      return data.msg[data.status];
     });
     template.helper("getTeamBtn", function(status){
-      return status == 1? 'yp_pay nsm_bottom':'nsm_bottom bggray'; 
+      return status == 1? 'yp_pay nsm_bottom':'nsm_bottom bggray';
     });
     template.helper("getPackageAll", function(status){
       return status == 2? 'nsm_radio_all_no':'nsm_radio_all';
@@ -1098,6 +1124,14 @@ var ypObj = {
     $("#ns_matches").find(".ns_match").each(function(index, el) {
       $(this).find(".nsm_radio").eq(0).addClass("selected");
     });
+    for(var i=0,len=data_03.length; i<len; i++){
+      var item = data_03[i];
+      if(item.status == '3'){
+        var $match = $("#ns_matches").find('.ns_match').eq(i);
+        $match.find('.nsm_st0').hide();
+        $match.find('.nsm_st1').show();
+      }
+    }
   },
   bindEvent: function() {
     // 展开更多
@@ -1125,7 +1159,7 @@ var ypObj = {
     });
 
     $("body").on("click", ".yp_pay", function() {
-      //判断登录状态      
+      //判断登录状态
       var isLogin = checkLogin();
       if (!isLogin) {
         middleLogin();
@@ -1154,7 +1188,7 @@ var ypObj = {
           $(".popup_money").html('¥'+euro_edata.price+"元");
           popupShow($popup);
         }
-        
+
       }
     });
     window.$mask = $("#mask");
@@ -1203,7 +1237,7 @@ var ypObj = {
       // 支付是否成功验证
       util.yppay.payStep5();
     });
-    
+
   },
   init: function() {
     var self = this;

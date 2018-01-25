@@ -57,6 +57,11 @@ fis.config.set('settings.optimizer.uglify-js', {
   }
 });
 
+fis.match('j/newseason.js', {
+    optimizer: fis.plugin('uglify-js'),
+    release: '/j/newseason.js'
+  })
+
 //使用方法 fis3 release prod
 // 使用相对路径
 fis.hook('relative');

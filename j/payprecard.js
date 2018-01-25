@@ -543,7 +543,7 @@ function registerForm(wbId, nick, wbType) {
           return false;
         } else {
           var uId = getSinaWbCookieVal('SINA_WB_LOCAL_NICKNAME_UID');
-          if(uId == "undefined"){ uId = false;}
+          if(uId == "undefined"){ uId = '';}
           euro_wbId = util.wbId || uId || util.getQueryString('wbId');
           if(!euro_wbId){
             util.alert("登录账号异常，请重新登录");

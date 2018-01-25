@@ -17,8 +17,115 @@
 </head>
 
 <body>
-  <script type="text/javascript" charset="utf-8" src="http://sports.sina.com.cn/js/lottseason1617/config.js"></script>
-  
+  <script type="text/javascript">
+    window.__newseason ={};
+    // 首轮尝鲜礼包 
+    __newseason.ns_03 = [{
+      //不可修改 id 
+      id: 'ns_03_01',
+      //不可修改 
+      name: '首轮尝鲜礼包',
+      //不可修改 
+      packname: '德甲',
+      //可修改 1为领取 2为已结束   3已领取(3这个状态由账号来判断,不可填)  
+      status: '1',
+      //不可修改 展示信息 
+      msg: ['', '立即抢购', '已结束', '已购买全包'],
+      //可修改 购买价格
+      price: '108',
+      //可修改 划去的价格
+      oldprice: '261',
+      //不可修改 玩法类型
+      gameType: 'z5_sx',
+      //不可修改 包类型id
+      packType: '7',
+      //多少场
+      count: '9',
+      // 不可修改 是否购买对应玩法的真爱包 1,2未购买 3已购买
+      z_sx: '1',
+      z_spf: '1',
+      z_dx: '1',
+      z_all: '1'
+    }, {
+      //不可修改 id 
+      id: 'ns_03_02',
+      //不可修改 
+      name: '首轮尝鲜礼包',
+      //不可修改 
+      packname: '英超',
+      //可修改 1为领取 2为已结束   3已领取(3这个状态由账号来判断,不可填)  
+      status: '2',
+      //不可修改 展示信息 
+      msg: ['', '立即抢购', '已结束', '已购买全包'],
+      //可修改 购买价格
+      price: '118',
+      //可修改 划去的价格
+      oldprice: '290',
+      //不可修改 玩法类型
+      gameType: 'z5_sx',
+      //不可修改 包类型id
+      packType: '8',
+      //多少场
+      count: '10',
+      // 不可修改 是否购买对应玩法的真爱包 1,2未购买 3已购买
+      z_sx: '1',
+      z_spf: '1',
+      z_dx: '1',
+      z_all: '1'
+    }, {
+      //不可修改 id 
+      id: 'ns_03_03',
+      //不可修改 
+      name: '首轮尝鲜礼包',
+      //不可修改 
+      packname: '意甲',
+      //可修改 1为领取 2为已结束   3已领取(3这个状态由账号来判断,不可填)  
+      status: '1',
+      //不可修改 展示信息 
+      msg: ['', '立即抢购', '已结束', '已购买全包'],
+      //可修改 购买价格
+      price: '118',
+      //可修改 划去的价格
+      oldprice: '290',
+      //不可修改 玩法类型
+      gameType: 'z5_sx',
+      //不可修改 包类型id
+      packType: '9',
+      //多少场
+      count: '10',
+      // 不可修改 是否购买对应玩法的真爱包 1,2未购买 3已购买
+      z_sx: '1',
+      z_spf: '1',
+      z_dx: '1',
+      z_all: '1'
+    },{
+      //不可修改 id 
+      id: 'ns_03_04',
+      //不可修改 
+      name: '首轮尝鲜礼包',
+      //不可修改 
+      packname: '西甲',
+      //可修改 1为领取 2为已结束   3已领取(3这个状态由账号来判断,不可填)  
+      status: '1',
+      //不可修改 展示信息 
+      msg: ['', '立即抢购', '已结束', '已购买全包'],
+      //可修改 购买价格
+      price: '118',
+      //可修改 划去的价格
+      oldprice: '290',
+      //不可修改 玩法类型
+      gameType: 'z5_sx',
+      //不可修改 包类型id
+      packType: '10',
+      //多少场
+      count: '10',
+      // 不可修改 是否购买对应玩法的真爱包 1,2未购买 3已购买
+      z_sx: '1',
+      z_spf: '1',
+      z_dx: '1',
+      z_all: '1'
+    }];
+  </script>
   <div class="wx_box">
     <div class="wx_tips">
       <img src="http://n.sinaimg.cn/sports/lottseason1617/wap/i/wx_tip.png" alt="weixin">
@@ -154,7 +261,7 @@
         {{each data as value index}}
           <div class="ns_match">
             <div class="nsm_head">
-              <div class="nsm_title">{{value.packname}}<em>{{value.subtitle}}</em>{{value.subpack}}</div>
+              <div class="nsm_title"><em>{{value.packname}}</em>首轮尝鲜包</div>
               <div class="nsm_st nsm_st0">
                 <em class="nsm_st_count">{{value.count}}</em> 场 <em class="nsm_del">{{value.oldprice}}</em>元
               </div>
@@ -164,7 +271,7 @@
             </div>
             <div class="nsm_main">
               <div class="nsm_flag">
-                {{# getFlag(value.imgSign,value.packname)}}
+                {{# getFlag(index,value.packname)}}
               </div>
               <div class="nsm_input">
                 <div class="{{ getTeamLi(value.z_sx)}}" data-type="z5_sx"><span class="radio_icon"></span>亚<span class="pl15"></span>盘</div>
@@ -185,14 +292,14 @@
 
     <div class="nsbox_detail">
       <div class="nsbox_detail_info">
-        1.目前赛事轮次礼包覆盖欧冠、英超、西甲、意甲、德甲、法甲六大赛事。轮次包价格会根据赛事比赛场次数的不同有所变化，以页面显示为准。<br/>
-        2.售卖的轮次礼包为当前轮，当前轮即本赛事未开赛的最近的一轮赛事，不会隔轮进行售卖（提示：本赛事有一场比赛开赛，本赛事当前轮礼包即停止销售。）
+        1.“德甲首轮尝鲜礼包”为德甲2016-17赛季首轮9场赛事预售礼包，单一玩法原价261元，现在预订只需108元。<br/>
+        2.“英超、意甲、西甲首轮尝鲜礼包”为2016-17赛季英超、意甲、西甲三大联赛首轮10场赛事预售礼包，单一联赛单一玩法原价均为290元，现在预订只需118元。
       </div>
       <div class="nsbox_detail_icon"><span></span></div>
       <div class="nsbox_detail_more">
-        3.轮次礼包含亚盘、胜平负、大小球三个玩法；“全包”包含“亚盘、胜平负、大小球”三种玩法(提示：为避免重复消费，若已购买单个玩法包，请勿再购买全包赛事包。)<br/>
-        4.“vip折扣卡”、“充值卡”及“轮次礼包”三种优惠，不可相互叠加使用。<br/>
-        5.本活动的最终解释权归北京新浪彩通网络技术有限公司所有。
+        3.首轮尝鲜礼包含尝鲜亚盘、胜平负、大小球三个玩法。<br/>
+        4.“首轮ALL-IN礼包”分别包含德甲、英超、意甲、西甲四个联赛的的“亚盘、胜平负、大小球”全包玩法礼包(提示：为避免重复消费，若已购买单个玩法包，请勿再购买ALL-IN赛事包)。<br/>
+        5. “vip折扣卡”、“充值卡”及“首轮尝鲜包”三种优惠，不可相互叠加使用。
       </div>
     </div>
   </div>
